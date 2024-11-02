@@ -28,7 +28,7 @@ spring:
         # https://stackoverflow.com/questions/21257819/what-is-the-difference-between-hibernate-jdbc-fetch-size-and-hibernate-jdbc-batc
         jdbc.batch_size: 20
   datasource:
-    url: ${datasourseUrl}
+    url: ${datasourceUrl}
     username: ${datasourceUsername}
     password: ${datasourcePassword}
 
@@ -64,8 +64,8 @@ spring:
               - email
               - profile
           gitlab:
-            client-id: ${gitlub.client-id}
-            client-secret: ${gitlub.client-secret}
+            client-id: ${gitlab.client-id}
+            client-secret: ${gitlab.client-secret}
             client-name: GitLab
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
             authorization-grant-type: authorization_code
