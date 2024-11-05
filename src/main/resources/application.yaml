@@ -89,8 +89,8 @@ spring:
             enable: true
           auth: true
     host: smtp.gmail.com
-    username: jira4jr@gmail.com
-    password: zdfzsrqvgimldzyj
+    username: ${mail.username}
+    password: ${mail.password}
     port: 587
   thymeleaf.check-template-location: false
 
